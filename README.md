@@ -14,7 +14,7 @@ Jump-ahead-to-the-React.js-Summary-
 https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25601582  
   
 # 02 # JavaScript Refresher #  
-Next-Gen JavaScript - Summary  
+<h2><strong>Next-Gen JavaScript - Summary</strong></h2>  
 - a brief introduction into some core next-gen JavaScript features -  
 <body><p>In this module, Iprovided a brief introduction into some core next-gen JavaScript features, of course focusing on the ones you'll see the most in this course. Here's a quick summary!</p>
 
@@ -3696,7 +3696,7 @@ printName({name: 'Max', age: 28}); // prints 'Max')</pre>
 
 <p>We get the same result as above but we save some code. By destructuring, we simply pull out the <code>name</code> property and store it in a variable/ argument named <code>name</code> which we then can use in the function body.</p></body>
   
- JS Array Functions  
+<h2><strong> JS Array Functions</strong></h2>  
   Not really next-gen JavaScript, but also important:&nbsp;JavaScript array functions like <code>map()</code>&nbsp;, <code>filter()</code>&nbsp;, <code>reduce() </code>&nbsp;etc.</p>
 
 <p>You'll see me use them quite a bit since a lot of React concepts rely on working with arrays (in immutable ways).</p>
@@ -3743,7 +3743,7 @@ printName({name: 'Max', age: 28}); // prints 'Max')</pre>
 
 
 
-<p>Particularly important in this course are:</p>
+<p>Particularly important are:</p>
 
 
 
