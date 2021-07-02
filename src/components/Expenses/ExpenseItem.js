@@ -8,10 +8,10 @@ import './ExpenseItem.css';
 const ExpenseItem = (props) => {
 
   const [title, setTitle] = useState(props.title);
-
+  console.log('ExpenseItem evaluated by React');
 
   const clickHandler = () => {
-    setTitle('Promenjen naziv!!!');
+    setTitle('Промењен назив!!!');
     console.log(title);
   }
 
@@ -22,7 +22,7 @@ const ExpenseItem = (props) => {
         <h2>{title}</h2>
         <div className="expense-item__price">€{props.amount}</div>
       </div>
-      <button onClick={clickHandler}>Promeni naziv</button>
+      <button onClick={clickHandler}>Промени назив</button>
     </Card>
   );
 }
