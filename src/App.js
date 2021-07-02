@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Expenses from './components/Expenses/Expenses';
 
 const App = () => {
@@ -19,7 +18,7 @@ const App = () => {
     },
     {
       id: 'e4',
-      title: 'New Desk (Wooden)',
+      title: 'Novi sto (Drveni)',
       amount: 450,
       date: new Date(2021, 5, 12),
     },
