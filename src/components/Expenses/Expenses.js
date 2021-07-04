@@ -10,10 +10,8 @@ const Expenses = (props) => {
 
   const filterChangeHandler = selectedYear => {
     setFilteredYear(selectedYear);
-  }
-}
+  };
 
-function Expenses(props) {
   return (
     <div>
       <Card className="expenses">
@@ -41,6 +39,6 @@ function Expenses(props) {
       </Card>
     </div>
   );
-}
+};
 
 export default Expenses;
