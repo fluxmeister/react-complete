@@ -22,6 +22,13 @@ const DUMMY_EXPENSES = [
     amount: 450,
     date: new Date(2021, 5, 12),
   },
+  {
+    id: 'e5',
+    title: 'Курс програмирања Основни Јава - FTN Informatika д.о.о.',
+    amount: 300,
+    date: new Date(2018, 5, 7),
+  },
+  
 ];
 
 

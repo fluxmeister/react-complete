@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import ExpenseDate from "../Expenses/ExpenseDate";
+import ExpenseDate from "../Expenses/ExpenseDate";
 import './ExpenseForm.css';
 
 const ExpenseForm = (props) => {
@@ -79,8 +79,8 @@ const ExpenseForm = (props) => {
                     <label>Датум</label>
                     <input 
                         type="date" 
-                        min="2021-07-01" 
-                        max="2022-12-31" 
+                        min="2015-07-01" 
+                        max="2032-12-31" 
                         value={enteredDate}
                         onChange={dateChangehandler} 
                     />
