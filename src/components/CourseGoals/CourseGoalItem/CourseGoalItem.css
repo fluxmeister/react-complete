@@ -1,16 +1,8 @@
 .goal-item {
   margin: 1rem 0;
-  backg?round: #8b005d;
+  background: #8b005d;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   color: white;
   padding: 1rem 2rem;
   cursor: pointer;
-  border-radius: 5px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    144deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(121, 9, 100, 1) 33%,
-    rgba(0, 212, 255, 1) 100%
-  );
 }
