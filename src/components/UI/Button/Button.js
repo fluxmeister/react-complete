@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
+    width: 100%;
     font: inherit;
     padding: 0.5rem 1.5rem;
     border: 1px solid #8b005d;
@@ -16,6 +17,10 @@ const Button = styled.button`
       rgba(121, 9, 100, 1) 33%,
       rgba(0, 212, 255, 1) 100%
     );
+
+    @media (min-width: 768px) {
+      width: auto;
+    }
 
   &:focus {
     outline: none;
