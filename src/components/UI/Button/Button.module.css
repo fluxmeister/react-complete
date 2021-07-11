@@ -14,3 +14,9 @@
 .button:active {
   background: #ac0e77;
 }
+
+@media (min-width: 769px) {
+  .button {
+    width: auto;
+  }
+}
