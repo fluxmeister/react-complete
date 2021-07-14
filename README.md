@@ -100,3 +100,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   
 ### Lifting State Up:  
 ![LiftingStateUp](https://user-images.githubusercontent.com/5030950/124387500-3d591c80-dcdf-11eb-8440-2631d506ab31.jpg)  
+
+### Arrow Functions:  
+![ArrowFunctionsReact](https://user-images.githubusercontent.com/5030950/125209260-e2ec2d00-e297-11eb-80bc-d7a95e0e2252.jpg)  
+  
