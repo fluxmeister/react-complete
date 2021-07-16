@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
+import ErrorModal from "../UI/ErrorModal";
 import classes from "../Users/AddUser.module.css";
 
 const AddUser = (props) => {
@@ -16,8 +17,8 @@ const AddUser = (props) => {
       return;
     }
     props.onAddUser(enteredUsername, enteredAge);
-    setEnteredUsername('');
-    setEnteredAge('');
+    setEnteredUsername("");
+    setEnteredAge("");
   };
 
   const ageChangeHandler = (event) => {
@@ -30,25 +31,31 @@ const AddUser = (props) => {
   };
 
   return (
-    <Card className={classes.input}>
-      <form onSubmit={addUserHandler}>
-        <label htmlFor="username">Корисничко име</label>
-        <input
-          id="username"
-          type="text"
-          value={enteredUsername}
-          onChange={usernameChangeHandler}
-        />
-        <label htmlFor="username">Узраст (године)</label>
-        <input
-          id="age"
-          type="number"
-          value={enteredAge}
-          onChange={ageChangeHandler}
-        />
-        <Button type="submit">Додај корисника</Button>
-      </form>
-    </Card>
+    <div>
+      <ErrorModal
+        title="An error occured!"
+        message="Нешто није прошло добро!"
+      />
+      <Card className={classes.input}>
+        <form onSubmit={addUserHandler}>
+          <label htmlFor="username">Корисничко име</label>
+          <input
+            id="username"
+            type="text"
+            value={enteredUsername}
+            onChange={usernameChangeHandler}
+          />
+          <label htmlFor="username">Узраст (године)</label>
+          <input
+            id="age"
+            type="number"
+            value={enteredAge}
+            onChange={ageChangeHandler}
+          />
+          <Button type="submit">Додај корисника</Button>
+        </form>
+      </Card>
+    </div>
   );
 };
 
