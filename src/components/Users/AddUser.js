@@ -7,13 +7,21 @@ import classes from "../Users/AddUser.module.css";
 const AddUser = (props) => {
   const [enteredUsername, setEnteredUsername] = useState(""); // array destructuring
   const [enteredAge, setEnteredAge] = useState(""); // array destructuring
+  const [error, setError] = useState();
 
   const addUserHandler = (event) => {
     event.preventDefault();
     if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
+      setError({
+        title: 'Неправилан унос', 
+        message: 'Молим, унесите важеће име и године (непразне вредности).'
+      });
       return;
     }
     if (+enteredAge < 1) {
+      setError({
+        title: 'Неправилан унос', 
+        message: 'Молим, унесите важеће године (непразне вредности).'
       return;
     }
     props.onAddUser(enteredUsername, enteredAge);
