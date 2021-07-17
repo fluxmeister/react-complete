@@ -3,7 +3,7 @@ import Card from './Card';
 import Button from './Button';
 import classes from './ErrorModal.module.css';
 
-const ErrorModal = props => {
+const ErrorModal =  props => {
     return (
     <div>
 
@@ -16,7 +16,7 @@ const ErrorModal = props => {
                 <p>{props.message}</p>
             </div>
             <footer className={classes.actions}>
-                <Button onClick={props.onConfirm}>Okay</Button>
+                <Button onClick={props.onConfirm}>У реду</Button>
             </footer>
         </Card>
     </div>
