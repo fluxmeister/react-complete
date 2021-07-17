@@ -4,29 +4,31 @@ import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
 import classes from "../Users/AddUser.module.css";
 
+
 const AddUser = (props) => {
-  const [enteredUsername, setEnteredUsername] = useState(""); // array destructuring
-  const [enteredAge, setEnteredAge] = useState(""); // array destructuring
+  const [enteredUsername, setEnteredUsername] = useState(''); // array destructuring
+  const [enteredAge, setEnteredAge] = useState(''); // array destructuring
   const [error, setError] = useState();
 
   const addUserHandler = (event) => {
     event.preventDefault();
     if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
       setError({
-        title: 'Неправилан унос', 
-        message: 'Молим, унесите важеће име и године (непразне вредности).'
+        title: 'Invalid input', 
+        message: 'Молим, унесите важеће име и године (непразне вредности).',
       });
       return;
     }
     if (+enteredAge < 1) {
       setError({
-        title: 'Неправилан унос', 
-        message: 'Молим, унесите важеће године (непразне вредности).'
-      return;
-    }
+        title: 'Invalid age', 
+        message: 'Молим, унесите важеће године (позитивна вредност).'
+    });
+    return;
+  }
     props.onAddUser(enteredUsername, enteredAge);
-    setEnteredUsername("");
-    setEnteredAge("");
+    setEnteredUsername('');
+    setEnteredAge('');
   };
 
   const ageChangeHandler = (event) => {
@@ -38,12 +40,17 @@ const AddUser = (props) => {
     setEnteredUsername(event.target.value);
   };
 
+  const errorHandler = () => {
+    setError(null);
+  };
+
   return (
     <div>
-      <ErrorModal
-        title="An error occured!"
-        message="Нешто није прошло добро!"
-      />
+      {error && <ErrorModal
+        title={error.title}
+        message={error.message}
+        onConfirm={errorHandler}
+      />}
       <Card className={classes.input}>
         <form onSubmit={addUserHandler}>
           <label htmlFor="username">Корисничко име</label>
@@ -53,7 +60,7 @@ const AddUser = (props) => {
             value={enteredUsername}
             onChange={usernameChangeHandler}
           />
-          <label htmlFor="username">Узраст (године)</label>
+          <label htmlFor="age">Узраст (године)</label>
           <input
             id="age"
             type="number"
