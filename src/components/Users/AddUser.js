@@ -14,14 +14,14 @@ const AddUser = (props) => {
     event.preventDefault();
     if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
       setError({
-        title: 'Invalid input', 
+        title: 'Неправилан унос!', 
         message: 'Молим, унесите важеће име и године (непразне вредности).',
       });
       return;
     }
     if (+enteredAge < 1) {
       setError({
-        title: 'Invalid age', 
+        title: 'Неправилан унос година!', 
         message: 'Молим, унесите важеће године (позитивна вредност).'
     });
     return;
