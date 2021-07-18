@@ -110,4 +110,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   # The Solution: Always wrap adjacent elements  
   ![The_Solution-Always_wrap_adjacent_elements](https://user-images.githubusercontent.com/5030950/126055361-93808a47-5ad2-48dd-b63c-fad68e965025.jpg)
 
+  # A New Problem: "<div> Soup"  
+  ![A_New_Problem-div_Soup](https://user-images.githubusercontent.com/5030950/126055534-c171ff40-8659-4b3d-ae5b-32cddfb3448b.jpg)
+  
+  
 
