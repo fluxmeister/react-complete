@@ -113,5 +113,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   # A New Problem: div Soup  
   ![A_New_Problem-div_Soup](https://user-images.githubusercontent.com/5030950/126055534-c171ff40-8659-4b3d-ae5b-32cddfb3448b.jpg)
   
-  
+  # Introducing Fragments  
+  ![Introducing Fragments](https://user-images.githubusercontent.com/5030950/126055908-f55bd003-7c66-4756-8eb9-9ecc448fb971.jpg)
+
 
