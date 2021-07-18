@@ -104,3 +104,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Arrow Functions:  
 ![ArrowFunctionsReact](https://user-images.githubusercontent.com/5030950/125209260-e2ec2d00-e297-11eb-80bc-d7a95e0e2252.jpg)  
   
+### JSX Limitations:  
+![JSX Limitations](https://user-images.githubusercontent.com/5030950/126055188-ca34df0f-0d32-4c6a-aff0-de96fe11cc6f.jpg)  
+  
+
