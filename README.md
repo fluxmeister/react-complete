@@ -107,4 +107,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### JSX Limitations:  
 ![JSX Limitations](https://user-images.githubusercontent.com/5030950/126055188-ca34df0f-0d32-4c6a-aff0-de96fe11cc6f.jpg)  
   
+  # The Solution: Always wrap adjacent elements  
+  ![The_Solution-Always_Wrap_Adjacent_Elements](https://user-images.githubusercontent.com/5030950/126055300-abfe183a-c742-47c1-8d7f-6ca9e8fd6be4.jpg)
+  
 
