@@ -123,3 +123,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   # What is an Effect or a Side Effect  
   ![WhatIsAnEffectOrASideEffect](https://user-images.githubusercontent.com/5030950/126574611-f0843d0d-5598-4e2b-9942-04751d3c57ba.jpg)
 
+  # handling Side Effects with the useEffect() Hook  
+  ![HandlingSideEffectsWithTheUseEffectHook](https://user-images.githubusercontent.com/5030950/126576018-5310ca88-4c1d-4678-b800-c74a0517a49e.jpg)
+
