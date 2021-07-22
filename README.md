@@ -104,3 +104,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Arrow Functions:  
 ![ArrowFunctionsReact](https://user-images.githubusercontent.com/5030950/125209260-e2ec2d00-e297-11eb-80bc-d7a95e0e2252.jpg)  
   
+### JSX Limitations:  
+![JSX Limitations](https://user-images.githubusercontent.com/5030950/126055188-ca34df0f-0d32-4c6a-aff0-de96fe11cc6f.jpg)  
+  
+  # The Solution: Always wrap adjacent elements  
+  ![The_Solution-Always_wrap_adjacent_elements](https://user-images.githubusercontent.com/5030950/126055361-93808a47-5ad2-48dd-b63c-fad68e965025.jpg)
+
+  # A New Problem: div Soup  
+  ![A_New_Problem-div_Soup](https://user-images.githubusercontent.com/5030950/126055534-c171ff40-8659-4b3d-ae5b-32cddfb3448b.jpg)
+  
+  # Introducing Fragments  
+  ![Introducing Fragments](https://user-images.githubusercontent.com/5030950/126055908-f55bd003-7c66-4756-8eb9-9ecc448fb971.jpg)
+
+  # Understanding React Portals  
+  ![Undestanding React Portals](https://user-images.githubusercontent.com/5030950/126056124-116448ef-25af-404b-8644-fee38735fc82.jpg)  
+  ![Understanding-React-Portals-2](https://user-images.githubusercontent.com/5030950/126056182-743f25b2-d1d9-440d-bb36-525d2c5d0bdd.jpg)  
+  
+  # What is an Effect or a Side Effect  
+  ![WhatIsAnEffectOrASideEffect](https://user-images.githubusercontent.com/5030950/126574611-f0843d0d-5598-4e2b-9942-04751d3c57ba.jpg)
+
+  # handling Side Effects with the useEffect() Hook  
+  ![HandlingSideEffectsWithTheUseEffectHook](https://user-images.githubusercontent.com/5030950/126576018-5310ca88-4c1d-4678-b800-c74a0517a49e.jpg)
+
