@@ -120,4 +120,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   ![Undestanding React Portals](https://user-images.githubusercontent.com/5030950/126056124-116448ef-25af-404b-8644-fee38735fc82.jpg)  
   ![Understanding-React-Portals-2](https://user-images.githubusercontent.com/5030950/126056182-743f25b2-d1d9-440d-bb36-525d2c5d0bdd.jpg)  
   
-  
+  # What is an Effect or a Side Effect  
+  ![WhatIsAnEffectOrASideEffect](https://user-images.githubusercontent.com/5030950/126574611-f0843d0d-5598-4e2b-9942-04751d3c57ba.jpg)
+
