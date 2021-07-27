@@ -13,39 +13,49 @@ const Login = (props) => {
 
   useEffect(() => {
     console.log('EFFECT RUNNING');
+
     return () => {
       console.log('EFFECT CLEANUP');
     };
   }, []);
 
-  useEffect(() => {
-    console.log('Checking form validity!');
-    const identifier = setTimeout(() => {
-      setFormIsValid(
-        enteredEmail.includes('@') && enteredPassword.trim().length > 6
-      );
-    }, 500);
+  // useEffect(() => {
+  //   console.log('Checking form validity!');
+  //   const identifier = setTimeout(() => {
+  //     setFormIsValid(
+  //       enteredEmail.includes('@') && enteredPassword.trim().length > 6
+  //     );
+  //   }, 500);
     
 
-    return () => {
-      console.log('CLEANUP');
-      clearTimeout(identifier); // this function is built-in into the browser
-    }; // anonymous arrow function, so called "clean-up" function
+  //   return () => {
+  //     console.log('CLEANUP');
+  //     clearTimeout(identifier); // this function is built-in into the browser
+  //   }; // anonymous arrow function, so called "clean-up" function
     
-  }, [/* setFormIsValid, 
-    We can ommit this because those state updating functions, 
-    by default, 
-    are insured by React to never change.
-    So, these functions will always be the same across re-render cycles
-    */ 
-   enteredEmail, enteredPassword]);
+  // }, [/* setFormIsValid, 
+  //   We can ommit this because those state updating functions, 
+  //   by default, 
+  //   are insured by React to never change.
+  //   So, these functions will always be the same across re-render cycles
+  //   */ 
+  //  enteredEmail, enteredPassword]);
 
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value); 
+
+    setFormIsValid(
+      event.target.value.includes('@') && enteredPassword.trim().length > 6
+    );
   };
 
   const passwordChangeHandler = (event) => {
     setEnteredPassword(event.target.value);
+
+    setFormIsValid(
+      enteredEmail.includes('@') && event.target.value.trim().length > 6
+    );
+
   };
 
   const validateEmailHandler = () => {
