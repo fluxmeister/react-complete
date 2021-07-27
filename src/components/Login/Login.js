@@ -15,7 +15,13 @@ const Login = (props) => {
     setFormIsValid(
       enteredEmail.includes('@') && enteredPassword.trim().length > 6
     );
-  }, [enteredEmail, enteredPassword]);
+  }, [/* setFormIsValid, 
+    We can ommit this because those state updating functions, 
+    by default, 
+    are insured by React to never change.
+    So, these functions will always be the same across re-render cycles
+    */ 
+   enteredEmail, enteredPassword]);
 
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value); 
