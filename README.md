@@ -131,5 +131,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   
   # Introducing useReducer() for State Management  
   ![Introducing_useReducer()_for_State_Management](https://user-images.githubusercontent.com/5030950/127117466-30a69f44-66a1-40d9-881b-2640e56f6222.jpg)
+  
+  # Understanding useReducer()  
+  ![Understanding_useReducer()](https://user-images.githubusercontent.com/5030950/127130409-23e80ae8-e132-4ee5-b28e-b040ea137e72.jpg)
 
 
