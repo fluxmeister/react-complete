@@ -129,5 +129,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   # Rules of Hooks  
   ![Rules_of_Hooks](https://user-images.githubusercontent.com/5030950/127093303-564605c6-5c39-4780-a4ea-d7e83545d30c.jpg)  
   
-  
+  # Introducing useReducer() for State Management  
+  ![Introducing_useReducer()_for_State_Management](https://user-images.githubusercontent.com/5030950/127117466-30a69f44-66a1-40d9-881b-2640e56f6222.jpg)
+
 
