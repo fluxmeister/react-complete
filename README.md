@@ -162,4 +162,6 @@ Why?
 
 Because now the effect function would re-run whenever ANY property of someObject changes - not just the one property (someProperty in the above example) our effect might depend on.  
   
-  
+  # useState() vs useReducer()  
+  ![useState()_vs_useReducer()](https://user-images.githubusercontent.com/5030950/127428250-62c16061-c6f1-4eaf-b2ee-73af3f4b7852.jpg)
+
