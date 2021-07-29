@@ -136,3 +136,49 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   ![Understanding_useReducer()](https://user-images.githubusercontent.com/5030950/127130409-23e80ae8-e132-4ee5-b28e-b040ea137e72.jpg)
 
 
+Object destructuring to add object properties as dependencies to useEffect():  
+
+const { someProperty } = someObject;  
+useEffect(() => {  
+  // code that only uses someProperty ...  
+}, [someProperty]);  
+This is a very common pattern and approach...   
+
+The key thing is NOT that we use destructuring but that we pass specific properties instead of the entire object as a dependency.  
+
+We could also write this code and it would work in the same way:  
+
+useEffect(() => {  
+  // code that only uses someProperty ...  
+}, [someObject.someProperty]);  
+This works just fine as well!  
+
+But we should avoid this code:  
+
+useEffect(() => {  
+  // code that only uses someProperty ...  
+}, [someObject]);  
+Why?  
+
+Because now the effect function would re-run whenever ANY property of someObject changes - not just the one property (someProperty in the above example) our effect might depend on.  
+  
+  # useState() vs useReducer()  
+  ![useState()_vs_useReducer()](https://user-images.githubusercontent.com/5030950/127428250-62c16061-c6f1-4eaf-b2ee-73af3f4b7852.jpg)  
+    
+  # Component Trees & Component Dependencies (Introducing React Context)  
+  ![Component_Trees_ _Component_Dependencies-Introducing_React_Context](https://user-images.githubusercontent.com/5030950/127431385-6ab764d8-efab-4dd7-b584-93e652388795.jpg)
+
+  We are forwarding data through the MainHeader to the Navigation component (10-013)
+  on props we receive in the MainHeader, even though we don't really need the data there
+  So, we could easily build "prop chains" which are used to forward data through components 
+  to other components.
+  It would be nicer if we could use props in a component to only receive the data 
+  this component really needs from its parent, 
+  and not forward our data through the parent which the parent doesn't even manage 
+  nor need itself. 
+  And for that we got a component-wide, "behind the scenes", State Storage, built into React.
+  We have a concept called React Context and this then allows us to, for example, trigger an action
+  in that component-wide State Storage, and then directly pass that to the component 
+  that is interested without building such a long prop chain.
+  ![Context_to_the_Rescue](https://user-images.githubusercontent.com/5030950/127432971-8a23be13-17ac-47b8-9b95-2fc44f893fc5.jpg)
+
