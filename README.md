@@ -182,3 +182,5 @@ Because now the effect function would re-run whenever ANY property of someObject
   that is interested without building such a long prop chain.
   ![Context_to_the_Rescue](https://user-images.githubusercontent.com/5030950/127432971-8a23be13-17ac-47b8-9b95-2fc44f893fc5.jpg)
 
+  
+
