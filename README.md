@@ -182,5 +182,9 @@ Because now the effect function would re-run whenever ANY property of someObject
   that is interested without building such a long prop chain.
   ![Context_to_the_Rescue](https://user-images.githubusercontent.com/5030950/127432971-8a23be13-17ac-47b8-9b95-2fc44f893fc5.jpg)
 
-  
+  # 10-018 React Context Limitations  
+  ![10-018 React Context Limitations](https://user-images.githubusercontent.com/5030950/127609438-2d97d914-6486-483d-a04b-08716e5685fe.jpg)
+
+  # 10-019 Rules of Hooks  
+  ![RulesOfHooks](https://user-images.githubusercontent.com/5030950/127726054-58ecf9c0-de59-4ca8-bca1-8cad6bdad09f.jpg)
 
