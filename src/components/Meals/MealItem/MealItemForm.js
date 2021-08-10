@@ -15,7 +15,7 @@ const MealItemForm = (props) => {
          * Hence, we have that other pair of curly braces.
          */
         input={{
-          id: "amount",
+          id: 'amount_' + props.id, // this changed!
           type: "number",
           min: "1",
           max: "5",
