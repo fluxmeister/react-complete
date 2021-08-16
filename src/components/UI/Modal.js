@@ -1,30 +1,38 @@
-import { Fragment } from 'react';
-import ReactDOM from 'react-dom';
+import { Fragment } from "react";
+import ReactDOM from "react-dom";
 
-import classes from './Modal.module.css';
+import classes from "./Modal.module.css";
 
-const Backdrop = props => {
-    return <div className={classes.Backdrop} />
+const Backdrop = (props) => {
+  return <div className={classes.backdrop} onClick={props.onClose} />;
 };
 
-const ModalOverlay = props => {
-    return <div className={classes.modal}>
-        <div className={classes.content}>{props.children}</div>
+const ModalOverlay = (props) => {
+  return (
+    <div className={classes.modal}>
+      <div className={classes.content}>{props.children}</div>
     </div>
+  );
 };
 
-const Modal = props => {
-    /* If we used Portals, it would go like this: */
-    // return <Fragment>
-    //     <Backdrop />
-    //     <ModalOverlay>{props.children}</ModalOverlay>
-    // </Fragment>
+const portalElement = document.getElementById("overlays");
 
-    return <Fragment>
-        {ReactDOM.createPortal(<Backdrop />)}
-        {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>)}
-        {}
+const Modal = (props) => {
+  /* If we didn't used Portals, it would go like this: */
+  // return <Fragment>
+  //     <Backdrop />
+  //     <ModalOverlay>{props.children}</ModalOverlay>
+  // </Fragment>
+
+  return (
+    <Fragment>
+      {ReactDOM.createPortal(<Backdrop onClose={props.onClose} />, portalElement)}
+      {ReactDOM.createPortal(
+        <ModalOverlay>{props.children}</ModalOverlay>,
+        portalElement
+      )}
     </Fragment>
+  );
 };
 
 export default Modal;
