@@ -11,9 +11,13 @@ const Cart = (props) => {
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
 
-  const cartItemRemoveHandler = (id) => {};
+  const cartItemRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
 
-  const cartItemAddHandler = (item) => {};
+  const cartItemAddHandler = (item) => {
+    cartCtx.addItem({ ...item, amount: 1});
+  };
 
   const cartItems = (
     <ul className={classes["cart-items"]}>
@@ -26,7 +30,7 @@ const Cart = (props) => {
           onRemove={cartItemRemoveHandler.bind(null, item.id)} 
           onAdd={cartItemAddHandler.bind(null, item)}  
           /* .bind preconfigures a function for a function execution and 
-          to preconfigure an argument that function will receive when is executed */ npm
+          to preconfigure an argument that function will receive when is executed */
         />
       ))}
     </ul>
