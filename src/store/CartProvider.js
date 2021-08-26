@@ -10,11 +10,35 @@ const defaultCartState = {
 
 const cartReducer = (state, action) => {
   if (action.type === 'ADD') {
-    const updatedItems = state.items.concat(action.item);
     const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount;
+
+    const existingCartitemIndex = state.items.findIndex(item => item.id === action.item.id);
+    /** .findIndex() is a built-in method in JavaScript , 
+     * which finds an index of an item in an array.
+     * This function will be executed for every item in an array.
+     * It will return true or false, regarding of existence of that particular item.
+     */
+
+    const existingCartItem = state.items[existingCartitemIndex];
+    let updatedItem;
+    let updatedItems;
+
+    if (existingCartItem) {
+      const updatedItem = {
+        ...existingCartItem, 
+        amount: existingCartItem.amount + action.item.amount
+      };
+      updatedItems = [...state.items];
+      updatedItems[existingCartitemIndex] = updatedItem;
+    } else {
+      // updateditem = { ...action.item };
+      // updatedItems = state.items.concat(updatedItem);
+      updatedItems = state.items.concat(action.item);
+    }
+
     return {
       items: updatedItems,
-      totalAmount: updatedTotalAmount
+      totalAmount: updatedTotalAmount,
     };
   }
   return defaultCartState;
