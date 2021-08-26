@@ -23,8 +23,10 @@ const Cart = (props) => {
           name={item.name}
           amount={item.amount}
           price={item.price}
-          onRemove={cartItemRemoveHandler} 
-          onAdd={cartItemAddHandler}
+          onRemove={cartItemRemoveHandler.bind(null, item.id)} 
+          onAdd={cartItemAddHandler.bind(null, item)}  
+          /* .bind preconfigures a function for a function execution and 
+          to preconfigure an argument that function will receive when is executed */ npm
         />
       ))}
     </ul>
