@@ -191,3 +191,6 @@ Because now the effect function would re-run whenever ANY property of someObject
   # 12-001 Module Introduction
   ![12-001 Module Introduction](https://user-images.githubusercontent.com/5030950/131249552-52bd511b-dea7-4cdb-9f5e-e64962bff369.jpg)
 
+  # 12-002 How React Really Works-01  
+  ![12-002 How React Really Works-01](https://user-images.githubusercontent.com/5030950/131249861-59b23f8c-f928-4e22-ad07-58d3e3c793ed.jpg)
+
