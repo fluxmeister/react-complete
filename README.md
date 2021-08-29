@@ -200,3 +200,5 @@ Because now the effect function would re-run whenever ANY property of someObject
   # 12-002 How React Really Works-03  
   ![12-002 How React Really Works-03](https://user-images.githubusercontent.com/5030950/131250054-7bb46e66-dccd-4390-b3e9-2aaa372014ae.jpg)
 
+  # 12-002 How React Really Works-04  
+  ![12-002 How React Really Works-04](https://user-images.githubusercontent.com/5030950/131250203-4678c277-8916-40d4-94c1-2b8f9df8521d.jpg)
