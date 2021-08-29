@@ -188,3 +188,4 @@ Because now the effect function would re-run whenever ANY property of someObject
   # 10-019 Rules of Hooks  
   ![RulesOfHooks](https://user-images.githubusercontent.com/5030950/127726054-58ecf9c0-de59-4ca8-bca1-8cad6bdad09f.jpg)
 
+  # 12-001 Module Introduction
