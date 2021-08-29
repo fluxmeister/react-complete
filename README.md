@@ -188,3 +188,17 @@ Because now the effect function would re-run whenever ANY property of someObject
   # 10-019 Rules of Hooks  
   ![RulesOfHooks](https://user-images.githubusercontent.com/5030950/127726054-58ecf9c0-de59-4ca8-bca1-8cad6bdad09f.jpg)
 
+  # 12-001 Module Introduction
+  ![12-001 Module Introduction](https://user-images.githubusercontent.com/5030950/131249552-52bd511b-dea7-4cdb-9f5e-e64962bff369.jpg)
+
+  # 12-002 How React Really Works-01  
+  ![12-002 How React Really Works-01](https://user-images.githubusercontent.com/5030950/131249861-59b23f8c-f928-4e22-ad07-58d3e3c793ed.jpg)
+
+  # 12-002 How React Really Works-02  
+  ![12-002 How React Really Works-02](https://user-images.githubusercontent.com/5030950/131249936-4dbc7b40-79aa-4810-ba79-ce7feb27c203.jpg)
+
+  # 12-002 How React Really Works-03  
+  ![12-002 How React Really Works-03](https://user-images.githubusercontent.com/5030950/131250054-7bb46e66-dccd-4390-b3e9-2aaa372014ae.jpg)
+
+  # 12-002 How React Really Works-04  
+  ![12-002 How React Really Works-04](https://user-images.githubusercontent.com/5030950/131250203-4678c277-8916-40d4-94c1-2b8f9df8521d.jpg)
